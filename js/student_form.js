@@ -1,24 +1,25 @@
 $(document).ready(function () {
-    $("#student_input").on("submit", function () {
+    $("#student_input").on("submit", function (event) {
         var surname = $("#surname").val();
         var email = $("#email").val();
         var news = $("#news").val();
         var age = $("#ageCategory").val();
-        var record= {
-            'surname':surname,
-            'email' : email,
-            'news':news,
-            'age':age
+        if (surname === "" || email === "" || news === "") {
+            event.preventDefault();
+            return;
+        }
+
+        var record = {
+            'surname': surname,
+            'email': email,
+            'news': news,
+            'age': age
         };
-        localStorage.setItem('student', record);
-        alert(record);
+        sessionStorage.setItem('student', record);
+        alert("Record added");
     });
 
     $("#student_input").on("reset", function () {
-        $("#surname").val("");
-        $("#email").val("");
-        $("#news").val("");
-        $("#age").val("");
         alert("Cleared");
     });
 });
