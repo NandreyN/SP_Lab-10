@@ -1,0 +1,18 @@
+.round_nav 
+{
+	border-radius: 50%;
+    display: inline-block;
+    margin-right: 20px;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+	background: red;
+}
+*.unselectable {
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+ }
