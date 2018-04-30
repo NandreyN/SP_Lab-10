@@ -9,7 +9,7 @@
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/menu.js"></script>
-
+    <script src="js/student_form.js"></script>
     <div class="navbar-light">
         <div class="round_nav unselectable" unselectable="on" id="a-task">A</div>
         <div class="round_nav unselectable" unselectable="on" id="b-task" href="b.html">B</div>
@@ -18,48 +18,52 @@
 </head>
 
 <body>
-    <form>
-        <div class="form-group>">
-            <label for="surname">Input your surname here</label>
-            <input type="text" class="form-control" id="surname" placeholder="Your surname">
+    <div class="container">
+        <form id="student_input">
+            <div class="form-group">
+                <div class="form-group>">
+                    <label for="surname">Input your surname here</label>
+                    <input type="text" class="form-control" id="surname" placeholder="Your surname">
 
-            <label for="email">Input yout email here</label>
-            <input type="email" class="form-control" id="email" placeholder="E-mail">
+                    <label for="email">Input yout email here</label>
+                    <input type="email" class="form-control" id="email" placeholder="E-mail">
 
-            <input class="form-check-input" type="checkbox" value="newsNotify" id="news">
-            <label for="news">Send news</label>
-        </div>
+                </div>
 
-        <div class="form-group">
-            <label for="ageCategory">Choose your age category</label>
-            <select id="ageCategory" class="form-control">
-                <option selected>Below 18</option>
-                <option>From 18 to 25</option>
-                <option>From 26 to 35</option>
-                <option>Above 36</option>
-            </select>
-        </div>
+                <div class="form-group">
+                    <input class="form-check-input" type="checkbox" value="newsNotify" id="news">
+                    <label for="news">Send news</label>
 
-        <div class="form-check">
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" id="maleRadio"
-                     value="male" name="gender" checked>
-                <label class="form-check-label" for="maleRadio">Male</label>
+                    <label for="ageCategory">Choose your age category</label>
+                    <select id="ageCategory" class="form-control">
+                        <option selected>Below 18</option>
+                        <option>From 18 to 25</option>
+                        <option>From 26 to 35</option>
+                        <option>Above 36</option>
+                    </select>
+                </div>
+
+                <div class="form-check">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" id="maleRadio" value="male" name="gender" checked>
+                        <label class="form-check-label" for="maleRadio">Male</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" id="femaleRadio" value="female" name="gender">
+                        <label class="form-check-label" for="femaleRadio">Female</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="photo">Upload your profile photo</label>
+                    <input type="file" class="form-control-file" id="photo">
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="reset" class="btn btn-danger">Reset</button>
             </div>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" id="femaleRadio" value="female" name="gender">
-                <label class="form-check-label" for="femaleRadio">Female</label>
-            </div>
-        </div>
-
-        <div class="form-group">
-            <label for="photo">Upload your profile photo</label>
-            <input type="file" class="form-control-file" id="photo">
-        </div>
-
-        <button type="submit" class="btn btn-primary">Submit</button>
-        <button type="reset" class="btn btn-danger">Reset</button>
-    </form>
+        </form>
+    </div>
 </body>
 
 </html>
