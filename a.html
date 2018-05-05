@@ -6,21 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="css/my_styles.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap-grid.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap-reboot.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/student_form.js"></script>
-    <div class="navbar-light">
-            <div class="round_nav unselectable" unselectable="on" id="a-task">
-                <a href="a.html">A</a>
-            </div>
-            <div class="round_nav unselectable" unselectable="on" id="b-task">
-                <a href="b.html">B</a>
-            </div>
-            <div class="round_nav unselectable" unselectable="on" id="c-task">
-                <a href="c.html">C</a>
-            </div>
+    <div class="container">
+        <div class="round_nav unselectable" unselectable="on" id="a-task">
+            <a href="a.html">A</a>
         </div>
+        <div class="round_nav unselectable" unselectable="on" id="b-task">
+            <a href="b.html">B</a>
+        </div>
+        <div class="round_nav unselectable" unselectable="on" id="c-task">
+            <a href="c.html">C</a>
+        </div>
+    </div>
 </head>
 
 <body>
@@ -65,8 +70,13 @@
                     <input type="file" class="form-control-file" id="photo">
                 </div>
 
-                <button type="submit" class="btn btn-primary">Submit</button>
-                <button type="reset" class="btn btn-danger">Reset</button>
+                <button type="submit" class="btn btn-default btn-sm">
+                    <i class="fa fa-check-circle" aria-hidden="true">Ok</i>
+                </button>
+
+                <button type="reset" class="btn btn-danger">
+                    <i class="fa fa-ban" aria-hidden="true">Reset</i>
+                </button>
             </div>
         </form>
     </div>
